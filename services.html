@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Fabri-Tech Engineering</title>
+<meta name="description" content="Structural steel detailing, 3D BIM modelling, connection design, fabrication support and industrial structure services from Fabri-Tech Engineering.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor"><div id="cursor-dot"></div><div id="cursor-ring"></div></div>
+
+<nav class="nav scrolled" id="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="images/fabri-tech-logo.jpeg" alt="Fabri-Tech Engineering">
+    <div class="nav-logo-wordmark">
+      <span class="nav-logo-primary">Fabri-Tech</span>
+      <span class="nav-logo-secondary">Engineering</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="contact.html"><span>Get a Quote</span></a>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-index">// 01 — Services</span>
+  <h1 class="page-hero-headline">Engineering<br><em>Services</em></h1>
+  <p class="page-hero-sub">From conceptual BIM models to fabrication-ready documentation — we deliver complete structural steel engineering services with precision, speed, and zero-tolerance accuracy.</p>
+  <div class="page-hero-bg-num">01</div>
+</div>
+
+<!-- SERVICE ACCORDION -->
+<div class="services-full-list">
+
+  <div class="service-accordion-row reveal" id="acc-0">
+    <div class="service-accordion-header" onclick="toggleAcc(0)">
+      <span class="service-accordion-num">01</span>
+      <span class="service-accordion-name">Structural Steel Detailing</span>
+      <span class="service-accordion-tag">Core Service</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">Complete shop drawings, erection plans, and general arrangement drawings produced to AISC, AS/NZS 1554, BS 5950, and Eurocode 3 standards. Every drawing package is checked for constructability and reviewed against the engineering model before release. We cover all structural member types — columns, beams, bracing, portals, purlins, and girts — with full connection detail callouts, weld symbols, and bolt specifications.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">Shop Drawings</span>
+            <span class="svc-pill">Erection Plans</span>
+            <span class="svc-pill">GA Drawings</span>
+            <span class="svc-pill">Connection Details</span>
+            <span class="svc-pill">AISC / AS / BS / EC3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-accordion-row reveal reveal-d1" id="acc-1">
+    <div class="service-accordion-header" onclick="toggleAcc(1)">
+      <span class="service-accordion-num">02</span>
+      <span class="service-accordion-name">3D BIM Modelling</span>
+      <span class="service-accordion-tag">Technology</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">Precision parametric 3D structural models using Tekla Structures and Autodesk Revit. Our models are built to LOD 350–400 and support full clash detection with architectural and MEP disciplines. All models are delivered with IFC and CIS/2 exports for open BIM coordination. Quantity take-offs, material schedules, and piece mark lists are extracted directly from the model to ensure 100% accuracy across all deliverables.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">Tekla Structures</span>
+            <span class="svc-pill">Autodesk Revit</span>
+            <span class="svc-pill">IFC Export</span>
+            <span class="svc-pill">Clash Detection</span>
+            <span class="svc-pill">LOD 350–400</span>
+            <span class="svc-pill">BOQ Extraction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-accordion-row reveal reveal-d2" id="acc-2">
+    <div class="service-accordion-header" onclick="toggleAcc(2)">
+      <span class="service-accordion-num">03</span>
+      <span class="service-accordion-name">Connection Design</span>
+      <span class="service-accordion-tag">Engineering</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">Rigorous engineering of moment connections, shear connections, base plates, splice plates, gusset plates, and fin plate connections. Each connection is designed from first principles using code-compliant software, with supporting engineering calculations provided. We coordinate closely with the SER to ensure all connection forces are correctly interpreted and that fabrication detailing reflects the design intent without ambiguity.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">Moment Connections</span>
+            <span class="svc-pill">Base Plates</span>
+            <span class="svc-pill">Splice Design</span>
+            <span class="svc-pill">Engineering Calcs</span>
+            <span class="svc-pill">Code Compliance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-accordion-row reveal reveal-d3" id="acc-3">
+    <div class="service-accordion-header" onclick="toggleAcc(3)">
+      <span class="service-accordion-num">04</span>
+      <span class="service-accordion-name">Fabrication &amp; NC Support</span>
+      <span class="service-accordion-tag">Manufacturing</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">NC files, DSTV/NC1 data, CNC cutting data, and material lists generated directly from the certified 3D model. This eliminates manual data re-entry at the fabrication stage and significantly reduces the risk of dimensional errors. We support full shop integration with leading fabrication management systems. Piece mark schedules, paint and surface treatment schedules, and shipping lists are all produced as part of the fabrication documentation package.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">NC / DSTV Files</span>
+            <span class="svc-pill">CNC Data</span>
+            <span class="svc-pill">Material Schedules</span>
+            <span class="svc-pill">Paint Schedules</span>
+            <span class="svc-pill">Shipping Lists</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-accordion-row reveal reveal-d4" id="acc-4">
+    <div class="service-accordion-header" onclick="toggleAcc(4)">
+      <span class="service-accordion-num">05</span>
+      <span class="service-accordion-name">Industrial Structures</span>
+      <span class="service-accordion-tag">Industrial</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">Specialised detailing for pipe racks, conveyor structures, overhead crane runway beams, equipment platforms, mezzanine floors, industrial stair towers, and heavy industrial steelwork for process and manufacturing facilities. We understand the critical tolerances and load path requirements of industrial structures and build these considerations into every detail we produce.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">Pipe Racks</span>
+            <span class="svc-pill">Conveyor Structures</span>
+            <span class="svc-pill">Crane Beams</span>
+            <span class="svc-pill">Equipment Platforms</span>
+            <span class="svc-pill">Mezzanine Floors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-accordion-row reveal" id="acc-5">
+    <div class="service-accordion-header" onclick="toggleAcc(5)">
+      <span class="service-accordion-num">06</span>
+      <span class="service-accordion-name">Multi-Storey Buildings</span>
+      <span class="service-accordion-tag">Commercial</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">Complete detailing for multi-level commercial, residential, mixed-use, and institutional steel frame structures. This includes structural floor systems (composite, stub girder, open web joists), stair and balustrade assemblies, façade framing, curtain wall support steelwork, and rooftop plant support structures. We produce erection sequences, temporary works provisions, and lifting lug details where required.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">Composite Floors</span>
+            <span class="svc-pill">Stairs &amp; Balustrades</span>
+            <span class="svc-pill">Facade Framing</span>
+            <span class="svc-pill">Erection Sequence</span>
+            <span class="svc-pill">Lifting Lugs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-accordion-row reveal reveal-d1" id="acc-6">
+    <div class="service-accordion-header" onclick="toggleAcc(6)">
+      <span class="service-accordion-num">07</span>
+      <span class="service-accordion-name">RFI &amp; Revision Support</span>
+      <span class="service-accordion-tag">Support</span>
+    </div>
+    <div class="service-accordion-body">
+      <div class="service-accordion-inner">
+        <div></div>
+        <div>
+          <p class="service-accordion-desc">Rapid, responsive RFI management and change order processing throughout the construction phase. We maintain live models and drawing registers that are updated in real-time. Revision clouds are clearly marked, revision histories are maintained, and all affected drawings are re-issued within agreed turnaround times. Our engineers are available for direct communication with site teams and fabricators to resolve technical queries efficiently.</p>
+          <div class="service-accordion-tags">
+            <span class="svc-pill">RFI Responses</span>
+            <span class="svc-pill">Change Orders</span>
+            <span class="svc-pill">Live Model Updates</span>
+            <span class="svc-pill">Revision Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /services-full-list -->
+
+<!-- CAPABILITIES -->
+<div class="capability-section">
+  <div class="section-label reveal">
+    <span class="section-label-dash"></span>
+    <span class="section-label-text">Technology & Standards</span>
+  </div>
+  <h2 class="section-headline reveal">Software &amp; <em>Standards</em></h2>
+  <div class="capability-grid">
+    <div class="cap-card reveal reveal-d1">
+      <svg class="cap-icon" viewBox="0 0 48 48"><rect x="4" y="8" width="40" height="32" rx="2"/><line x1="4" y1="20" x2="44" y2="20"/><circle cx="12" cy="14" r="2" fill="currentColor" stroke="none"/><circle cx="20" cy="14" r="2" fill="currentColor" stroke="none"/></svg>
+      <div class="cap-title">Tekla Structures</div>
+      <p class="cap-desc">Advanced 3D detailing, clash detection, NC output, and fabrication data extraction using the industry-leading structural BIM platform.</p>
+    </div>
+    <div class="cap-card reveal reveal-d2">
+      <svg class="cap-icon" viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" rx="2"/><line x1="14" y1="4" x2="14" y2="44"/><line x1="24" y1="4" x2="24" y2="44"/><line x1="34" y1="4" x2="34" y2="44"/><line x1="4" y1="14" x2="44" y2="14"/><line x1="4" y1="24" x2="44" y2="24"/><line x1="4" y1="34" x2="44" y2="34"/></svg>
+      <div class="cap-title">AutoCAD / Revit</div>
+      <p class="cap-desc">2D drafting and documentation in AutoCAD, plus Revit for BIM-coordinated structural models and multi-discipline integration.</p>
+    </div>
+    <div class="cap-card reveal reveal-d3">
+      <svg class="cap-icon" viewBox="0 0 48 48"><polygon points="24 4 44 14 44 34 24 44 4 34 4 14"/><circle cx="24" cy="24" r="6"/></svg>
+      <div class="cap-title">AISC / AS / BS / EC3</div>
+      <p class="cap-desc">Full compliance with AISC, AS/NZS 1554, BS 5950, and Eurocode 3. We work across jurisdictions and adapt to local authority requirements.</p>
+    </div>
+    <div class="cap-card reveal reveal-d4">
+      <svg class="cap-icon" viewBox="0 0 48 48"><path d="M24 4 L40 12 L40 28 L24 44 L8 28 L8 12 Z"/><line x1="24" y1="4" x2="24" y2="44"/><line x1="8" y1="20" x2="40" y2="20"/></svg>
+      <div class="cap-title">IFC / CIS/2 / Open BIM</div>
+      <p class="cap-desc">Open BIM format delivery for seamless integration with architects, MEP engineers, structural engineers, and project management platforms.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band reveal">
+  <div class="cta-band-bg-text">FTE</div>
+  <h2 class="cta-band-headline">Need a<br><em>service quote?</em></h2>
+  <div class="cta-band-actions">
+    <a class="btn btn-primary magnetic" href="contact.html"><span>Contact Us</span><svg class="btn-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a class="btn btn-ghost magnetic" href="projects.html"><span>See Projects</span></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-brand-logo" src="images/fabri-tech-logo.jpeg" alt="Fabri-Tech Engineering">
+      <p class="footer-brand-desc">Precision structural steel detailing and engineering services delivered worldwide.</p>
+    </div>
+    <div>
+      <div class="footer-col-heading">Navigation</div>
+      <ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-heading">Services</div>
+      <ul class="footer-nav"><li><a href="#">Structural Detailing</a></li><li><a href="#">3D BIM Modelling</a></li><li><a href="#">Connection Design</a></li><li><a href="#">Fabrication Support</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-heading">Contact</div>
+      <div class="footer-contact-row"><svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="footer-contact-text"><a href="mailto:fabri.tech@aol.com">fabri.tech@aol.com</a></span></div>
+      <div class="footer-contact-row"><svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg><span class="footer-contact-text"><a href="tel:+14083007054">+1 408-300-7054</a></span></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span class="footer-copy">© 2025 Fabri-Tech Engineering. All rights reserved.</span><div class="footer-socials"><a class="footer-social" href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a class="footer-social" href="mailto:fabri.tech@aol.com"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+nav.classList.add('scrolled');
+const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');
+let mx=-300,my=-300,rx=-300,ry=-300;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+(function a(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;if(dot){dot.style.left=mx+'px';dot.style.top=my+'px';}if(ring){ring.style.left=rx+'px';ring.style.top=ry+'px';}requestAnimationFrame(a);})();
+document.addEventListener('mouseover',e=>{if(e.target.closest('a,button'))ring&&ring.classList.add('hovered');});
+document.addEventListener('mouseout',e=>{if(e.target.closest('a,button'))ring&&ring.classList.remove('hovered');});
+document.addEventListener('mousedown',()=>ring&&ring.classList.add('clicking'));
+document.addEventListener('mouseup',()=>ring&&ring.classList.remove('clicking'));
+document.querySelectorAll('.magnetic').forEach(btn=>{
+  btn.addEventListener('mousemove',e=>{const r=btn.getBoundingClientRect();btn.style.transform=`translate(${(e.clientX-r.left-r.width/2)*0.32}px,${(e.clientY-r.top-r.height/2)*0.32}px)`;});
+  btn.addEventListener('mouseleave',()=>{btn.style.transform='translate(0,0)';btn.style.transition='transform 0.6s cubic-bezier(0.34,1.56,0.64,1)';setTimeout(()=>btn.style.transition='',600);});
+});
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}}),{threshold:0.06});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+function toggleAcc(i){
+  const row=document.getElementById('acc-'+i);
+  const isOpen=row.classList.contains('open');
+  document.querySelectorAll('.service-accordion-row').forEach(r=>r.classList.remove('open'));
+  if(!isOpen)row.classList.add('open');
+}
+// Open first by default
+toggleAcc(0);
+</script>
+</body>
+</html>
