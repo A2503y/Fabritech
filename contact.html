@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Fabri-Tech Engineering</title>
+  <meta name="description" content="Contact Fabri-Tech Engineering for a detailed scope assessment and competitive quotation within 24 business hours.">
+  <meta name="theme-color" content="#0A0D10">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor" aria-hidden="true">
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+</div>
+
+<header>
+  <nav class="nav is-scrolled" id="nav" role="navigation" aria-label="Main">
+    <a class="nav-logo" href="index.html" aria-label="Fabri-Tech Engineering — Home">
+      <img src="images/fabri-tech-logo.jpeg" alt="Fabri-Tech Engineering logo">
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Fabri-Tech</span>
+        <span class="nav-logo-sub">Engineering</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <a class="nav-cta magnetic" href="contact.html"><span>Get a Quote</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <nav class="nav-mobile-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <p class="nav-mobile-contact"><a href="mailto:fabri.tech@aol.com">fabri.tech@aol.com</a></p>
+      <p class="nav-mobile-contact"><a href="tel:+14083007054">+1 408-300-7054</a></p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <span class="page-hero-index">// 04 — Contact</span>
+  <h1 class="page-hero-headline">Get In <em>Touch</em></h1>
+  <p class="page-hero-sub">
+    Have a project to discuss? Our engineering team provides a detailed scope assessment
+    and competitive quotation within 24 business hours of your enquiry.
+  </p>
+  <div class="page-hero-num" aria-hidden="true">04</div>
+</div>
+
+<!-- CONTACT LAYOUT -->
+<section class="section section--void" aria-labelledby="contact-heading">
+  <h2 class="sr-only" id="contact-heading">Contact Fabri-Tech Engineering</h2>
+
+  <div class="contact-grid">
+
+    <!-- ── LEFT: FORM ──────────────────────────────────────────────── -->
+    <div class="reveal">
+      <div class="section-tag" style="margin-bottom:32px">
+        <span class="section-tag-bar"></span>
+        <span class="section-tag-text">Send a Message</span>
+      </div>
+
+      <form id="contact-form" novalidate aria-label="Project enquiry form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="f-fname">First Name <span aria-hidden="true">*</span></label>
+            <input
+              class="form-control"
+              type="text"
+              id="f-fname"
+              name="first_name"
+              placeholder="John"
+              autocomplete="given-name"
+              required
+            >
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-lname">Last Name <span aria-hidden="true">*</span></label>
+            <input
+              class="form-control"
+              type="text"
+              id="f-lname"
+              name="last_name"
+              placeholder="Smith"
+              autocomplete="family-name"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-email">Email Address <span aria-hidden="true">*</span></label>
+          <input
+            class="form-control"
+            type="email"
+            id="f-email"
+            name="email"
+            placeholder="john@company.com"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-phone">Phone Number</label>
+          <input
+            class="form-control"
+            type="tel"
+            id="f-phone"
+            name="phone"
+            placeholder="+1 000 000 0000"
+            autocomplete="tel"
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-company">Company / Organisation</label>
+          <input
+            class="form-control"
+            type="text"
+            id="f-company"
+            name="company"
+            placeholder="Your Company Name"
+            autocomplete="organization"
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-service">Service Required</label>
+          <select class="form-control" id="f-service" name="service">
+            <option value="" disabled selected>Select a service…</option>
+            <option value="detailing">Structural Steel Detailing</option>
+            <option value="bim">3D BIM Modelling</option>
+            <option value="connection">Connection Design</option>
+            <option value="nc">Fabrication &amp; NC Support</option>
+            <option value="industrial">Industrial Structures</option>
+            <option value="multistorey">Multi-Storey Buildings</option>
+            <option value="rfi">RFI &amp; Revision Support</option>
+            <option value="general">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-message">Project Details <span aria-hidden="true">*</span></label>
+          <textarea
+            class="form-control"
+            id="f-message"
+            name="message"
+            placeholder="Briefly describe your project scope, structure type, applicable standards, timeline, and any specific requirements…"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-budget">Approximate Budget (Optional)</label>
+          <select class="form-control" id="f-budget" name="budget">
+            <option value="" disabled selected>Select a range…</option>
+            <option>Under $10,000</option>
+            <option>$10,000 – $50,000</option>
+            <option>$50,000 – $150,000</option>
+            <option>$150,000 – $500,000</option>
+            <option>$500,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <button type="submit" class="form-submit" id="form-submit">
+          <span>Send Message →</span>
+        </button>
+
+        <!-- Success message — hidden by default, shown via JS -->
+        <div class="form-success" id="form-success" role="alert" aria-live="polite">
+          ✔ &nbsp;&nbsp;Message received — we will respond within 24 business hours.
+        </div>
+
+      </form>
+    </div>
+
+    <!-- ── RIGHT: INFO ─────────────────────────────────────────────── -->
+    <div class="reveal reveal-d3">
+
+      <div class="section-tag" style="margin-bottom:32px">
+        <span class="section-tag-bar"></span>
+        <span class="section-tag-text">Contact Information</span>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-label">Email</div>
+        <div class="contact-info-value">
+          <a href="mailto:fabri.tech@aol.com">fabri.tech@aol.com</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-label">Phone</div>
+        <div class="contact-info-value">
+          <a href="tel:+14083007054">+1 408-300-7054</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-label">Business Hours</div>
+        <div class="contact-info-value">
+          Monday – Friday<br>
+          8:00 AM EST – 2:00 PM PST
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-label">Response Commitment</div>
+        <div class="contact-info-value">
+          All project enquiries responded to within 24 business hours with a
+          detailed scope assessment and itemised quotation.
+        </div>
+      </div>
+
+      <div class="contact-divider"></div>
+
+      <!-- WHAT HAPPENS NEXT -->
+      <div class="section-tag" style="margin-bottom:28px">
+        <span class="section-tag-bar"></span>
+        <span class="section-tag-text">What Happens Next</span>
+      </div>
+
+      <div>
+        <div class="process-step">
+          <span class="process-num">01</span>
+          <div>
+            <div class="process-title">Initial Review</div>
+            <p class="process-body">
+              We review your brief and assess the scope, complexity, structural typology,
+              and applicable standards — within 24 hours of receipt.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <span class="process-num">02</span>
+          <div>
+            <div class="process-title">Detailed Quotation</div>
+            <p class="process-body">
+              A competitive, itemised quotation is issued with a clear deliverable schedule,
+              timeline, revision allowances, and fee breakdown.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <span class="process-num">03</span>
+          <div>
+            <div class="process-title">Kick-Off &amp; Delivery</div>
+            <p class="process-body">
+              Once approved, we mobilise immediately. Your dedicated project team begins
+              modelling and documentation to an agreed programme — no delays, no surprises.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick-contact strip -->
+      <div style="margin-top:48px;padding:28px 30px;border:1px solid var(--border-dim);background:var(--bg-raised)">
+        <div style="font-family:var(--f-mono);font-size:0.56rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--red);margin-bottom:16px">Prefer to call directly?</div>
+        <a
+          href="tel:+14083007054"
+          style="display:inline-flex;align-items:center;gap:12px;font-family:var(--f-head);font-weight:700;font-size:1.4rem;letter-spacing:-0.02em;color:var(--text-white);text-transform:uppercase;transition:color 0.25s"
+          onmouseover="this.style.color='var(--red)'"
+          onmouseout="this.style.color='var(--text-white)'"
+          aria-label="Call +1 408-300-7054"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +1 408-300-7054
+        </a>
+        <p style="margin-top:10px;font-size:0.80rem;font-weight:300;color:var(--text-muted)">
+          Available 8:00 AM EST – 2:00 PM PST, Monday to Friday.
+        </p>
+      </div>
+
+    </div><!-- /right col -->
+
+  </div><!-- /contact-grid -->
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-brand-logo" src="images/fabri-tech-logo.jpeg" alt="Fabri-Tech Engineering">
+      <p class="footer-brand-desc">Precision structural steel detailing and engineering services delivered worldwide with uncompromising accuracy.</p>
+    </div>
+    <div>
+      <div class="footer-col-heading">Navigation</div>
+      <ul class="footer-nav" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-heading">Services</div>
+      <ul class="footer-nav" role="list">
+        <li><a href="services.html">Structural Detailing</a></li>
+        <li><a href="services.html">3D BIM Modelling</a></li>
+        <li><a href="services.html">Connection Design</a></li>
+        <li><a href="services.html">Fabrication Support</a></li>
+        <li><a href="services.html">Industrial Structures</a></li>
+        <li><a href="services.html">Multi-Storey Buildings</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-heading">Contact</div>
+      <div class="footer-contact-row">
+        <svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span class="footer-contact-text"><a href="mailto:fabri.tech@aol.com">fabri.tech@aol.com</a></span>
+      </div>
+      <div class="footer-contact-row">
+        <svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="footer-contact-text"><a href="tel:+14083007054">+1 408-300-7054</a></span>
+      </div>
+      <div class="footer-contact-row">
+        <svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span class="footer-contact-text">8:00 AM EST – 2:00 PM PST, Mon–Fri</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Fabri-Tech Engineering. All rights reserved.</span>
+    <div class="footer-socials">
+      <a class="footer-social" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a class="footer-social" href="mailto:fabri.tech@aol.com" aria-label="Email us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── JAVASCRIPT ──────────────────────────────────────────────────────────── -->
+<script>
+/* NAV SCROLL */
+(function(){var nav=document.getElementById('nav');function t(){nav.classList.toggle('is-scrolled',window.scrollY>60);}window.addEventListener('scroll',t,{passive:true});nav.classList.add('is-scrolled');}());
+
+/* HAMBURGER + OVERFLOW LOCK */
+(function(){
+  var btn=document.getElementById('hamburger'),menu=document.getElementById('mobile-menu');
+  function open(){btn.classList.add('is-open');btn.setAttribute('aria-expanded','true');btn.setAttribute('aria-label','Close menu');menu.classList.add('is-open');document.body.style.overflow='hidden';}
+  function close(){btn.classList.remove('is-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open menu');menu.classList.remove('is-open');document.body.style.overflow='';}
+  btn.addEventListener('click',function(){btn.classList.contains('is-open')?close():open();});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&btn.classList.contains('is-open'))close();});
+}());
+
+/* CURSOR */
+(function(){
+  if(!window.matchMedia('(pointer: fine)').matches)return;
+  var dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');
+  var mx=-400,my=-400,rx=-400,ry=-400;
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;});
+  (function loop(){dot.style.left=mx+'px';dot.style.top=my+'px';rx+=(mx-rx)*0.11;ry+=(my-ry)*0.11;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+  document.addEventListener('mouseover',function(e){if(e.target.closest('a,button,.form-control'))ring.classList.add('is-hovered');});
+  document.addEventListener('mouseout',function(e){if(e.target.closest('a,button,.form-control'))ring.classList.remove('is-hovered');});
+  document.addEventListener('mousedown',function(){ring.classList.add('is-clicking');});
+  document.addEventListener('mouseup',function(){ring.classList.remove('is-clicking');});
+}());
+
+/* MAGNETIC */
+(function(){
+  document.querySelectorAll('.magnetic').forEach(function(el){
+    el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();el.style.transform='translate('+(e.clientX-r.left-r.width/2)*0.34+'px,'+(e.clientY-r.top-r.height/2)*0.34+'px)';el.style.transition='transform 0.1s linear';});
+    el.addEventListener('mouseleave',function(){el.style.transform='translate(0,0)';el.style.transition='transform 0.65s cubic-bezier(0.34,1.56,0.64,1)';});
+  });
+}());
+
+/* SCROLL REVEAL */
+(function(){
+  var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target);}});},{threshold:0.07});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+}());
+
+/* FORM SUBMISSION */
+(function(){
+  var form=document.getElementById('contact-form');
+  var success=document.getElementById('form-success');
+  var submitBtn=document.getElementById('form-submit');
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+
+    /* Basic client-side validation */
+    var fname=document.getElementById('f-fname').value.trim();
+    var lname=document.getElementById('f-lname').value.trim();
+    var email=document.getElementById('f-email').value.trim();
+    var message=document.getElementById('f-message').value.trim();
+
+    if(!fname||!lname||!email||!message){
+      /* Highlight empty required fields */
+      [['f-fname',fname],['f-lname',lname],['f-email',email],['f-message',message]].forEach(function(pair){
+        var el=document.getElementById(pair[0]);
+        if(!pair[1]){el.style.borderColor='var(--red)';}
+        else{el.style.borderColor='';}
+      });
+      return;
+    }
+
+    /* Simulate submission — replace with your backend/FormSubmit/Netlify action */
+    submitBtn.disabled=true;
+    submitBtn.querySelector('span').textContent='Sending…';
+
+    setTimeout(function(){
+      form.style.opacity='0.30';
+      form.style.pointerEvents='none';
+      success.style.display='block';
+    }, 800);
+  });
+
+  /* Clear red border on input */
+  form.querySelectorAll('.form-control').forEach(function(input){
+    input.addEventListener('input',function(){input.style.borderColor='';});
+  });
+}());
+</script>
+
+</body>
+</html>

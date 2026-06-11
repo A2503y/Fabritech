@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Fabri-Tech Engineering</title>
+  <meta name="description" content="Explore Fabri-Tech Engineering's portfolio of precision structural steel detailing and BIM modelling projects across industrial, commercial, and infrastructure sectors.">
+  <meta name="theme-color" content="#0A0D10">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor" aria-hidden="true"><div id="cursor-dot"></div><div id="cursor-ring"></div></div>
+
+<!-- NAV -->
+<header>
+  <nav class="nav is-scrolled" id="nav" role="navigation" aria-label="Main">
+    <a class="nav-logo" href="index.html" aria-label="Fabri-Tech Engineering — Home">
+      <img src="images/fabri-tech-logo.jpeg" alt="Fabri-Tech Engineering logo">
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Fabri-Tech</span>
+        <span class="nav-logo-sub">Engineering</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta magnetic" href="contact.html"><span>Get a Quote</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <nav class="nav-mobile-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <p class="nav-mobile-contact"><a href="mailto:fabri.tech@aol.com">fabri.tech@aol.com</a></p>
+      <p class="nav-mobile-contact"><a href="tel:+14083007054">+1 408-300-7054</a></p>
+    </div>
+  </div>
+</header>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image viewer">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lb-close" aria-label="Close lightbox">&#10005;</button>
+    <img class="lightbox-img" id="lb-img" src="" alt="">
+    <div class="lightbox-footer">
+      <div>
+        <div class="lightbox-cat" id="lb-cat"></div>
+        <div class="lightbox-title" id="lb-title"></div>
+      </div>
+      <div class="lightbox-nav" aria-label="Navigate projects">
+        <button class="lightbox-nav-btn" id="lb-prev" aria-label="Previous project">&#8592;</button>
+        <button class="lightbox-nav-btn" id="lb-next" aria-label="Next project">&#8594;</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<main>
+<div class="page-hero">
+  <span class="page-hero-index">// 02 — Projects</span>
+  <h1 class="page-hero-headline">Our <em>Projects</em></h1>
+  <p class="page-hero-sub">A curated selection of our most technically demanding structural steel engineering and detailing projects — spanning industrial, commercial, infrastructure, and aquatic sectors.</p>
+  <div class="page-hero-num" aria-hidden="true">02</div>
+</div>
+
+<!-- PROJECTS -->
+<section class="section section--void" aria-label="Project gallery">
+
+  <div class="projects-filter reveal" role="group" aria-label="Filter by category">
+    <button class="filter-btn is-active" data-filter="all"            aria-pressed="true" >All</button>
+    <button class="filter-btn"           data-filter="industrial"     aria-pressed="false">Industrial</button>
+    <button class="filter-btn"           data-filter="commercial"     aria-pressed="false">Commercial</button>
+    <button class="filter-btn"           data-filter="infrastructure" aria-pressed="false">Infrastructure</button>
+    <button class="filter-btn"           data-filter="mezzanine"      aria-pressed="false">Mezzanine</button>
+    <button class="filter-btn"           data-filter="aquatic"        aria-pressed="false">Aquatic</button>
+  </div>
+
+  <div class="proj-grid" id="proj-grid">
+
+    <article class="proj-card wide reveal" data-cat="industrial" data-idx="0" tabindex="0" role="button" aria-label="View: Large-Span Industrial Storage Facility">
+      <img src="images/Snap-2.PNG" alt="Large-span industrial storage facility — colour-coded 3D BIM model with perimeter wall panels and roof framing" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Industrial // Storage</div>
+        <div class="proj-name">Large-Span Industrial Storage Facility</div>
+        <p class="proj-detail">Full 3D BIM model of a large-span industrial storage structure with colour-coded wall panels, roof purlin system, and integrated stair access tower.</p>
+        <div class="proj-view">Enlarge <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d1" data-cat="infrastructure" data-idx="1" tabindex="0" role="button" aria-label="View: Elevated Conveyor Bridge Structure">
+      <img src="images/Snap-3.PNG" alt="Long-span elevated conveyor bridge structure with lattice truss supports and end portal frames" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Infrastructure</div>
+        <div class="proj-name">Elevated Conveyor &amp; Bridge</div>
+        <p class="proj-detail">Long-span elevated conveyor bridge with lattice truss supports, end portal frames, and brace legs at each intermediate support.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d2" data-cat="commercial" data-idx="2" tabindex="0" role="button" aria-label="View: Multi-Level Commercial Frame">
+      <img src="images/Snap-4.PNG" alt="Multi-level commercial steel frame structure with staircases and composite floor systems" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Commercial</div>
+        <div class="proj-name">Multi-Level Commercial Frame</div>
+        <p class="proj-detail">Complete structural steel detailing for a multi-storey commercial building with stair towers, composite floor framing, and rooftop plant support steelwork.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-cat="commercial" data-idx="3" tabindex="0" role="button" aria-label="View: Modular Building Assemblies">
+      <img src="images/Snap-5.PNG" alt="Modular portal frame building assemblies with wall panels and pad footing connection details" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Commercial // Modular</div>
+        <div class="proj-name">Modular Building Assemblies</div>
+        <p class="proj-detail">Modular portal frame assemblies, precast wall panel framing, and column-beam systems with pad footing connection details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card wide reveal reveal-d1" data-cat="industrial" data-idx="4" tabindex="0" role="button" aria-label="View: Industrial Processing Plant Steelwork">
+      <img src="images/Snap-6.PNG" alt="Complex industrial processing plant steelwork with integrated walkways, platforms and concrete cores" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Industrial // Processing</div>
+        <div class="proj-name">Industrial Processing Plant Steelwork</div>
+        <p class="proj-detail">Complex industrial processing plant with integrated walkways, elevated platforms, concrete core integration, and full 3D clash-detected BIM model.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-cat="industrial" data-idx="5" tabindex="0" role="button" aria-label="View: Portal Frame Industrial Shed">
+      <img src="images/Snap-7.PNG" alt="Single-storey portal frame industrial shed with wind bracing and precast concrete wall panels" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Industrial</div>
+        <div class="proj-name">Portal Frame Industrial Shed</div>
+        <p class="proj-detail">Single-storey portal frame shed with full wind bracing system, precast concrete wall panels, and roller door structural framing details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d1" data-cat="mezzanine" data-idx="6" tabindex="0" role="button" aria-label="View: Mezzanine and Stair Access Systems">
+      <img src="images/Snap-8.PNG" alt="Multi-level mezzanine floor, walkway, and staircase systems with handrail and grating details" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Mezzanine // Access</div>
+        <div class="proj-name">Mezzanine &amp; Stair Access Systems</div>
+        <p class="proj-detail">Multi-level mezzanine floor, walkway platforms, and staircase systems with full handrail, grating, and non-slip nosing details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d2" data-cat="mezzanine" data-idx="7" tabindex="0" role="button" aria-label="View: Multi-Level Stair Core Structure">
+      <img src="images/Snap-9.PNG" alt="Multi-level stair core with braced frames and floor landing integration" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Mezzanine // Stair Core</div>
+        <div class="proj-name">Multi-Level Stair Core Structure</div>
+        <p class="proj-detail">Braced stair core structures with intermediate floor landings, wall panel integration, and moment connections at each level transition.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card wide reveal" data-cat="mezzanine" data-idx="8" tabindex="0" role="button" aria-label="View: Mezzanine Floor and Facade Framing">
+      <img src="images/Snap-10.PNG" alt="Mezzanine floor structure combined with facade cladding rail system and stair landing" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Mezzanine // Facade</div>
+        <div class="proj-name">Mezzanine Floor &amp; Facade Framing</div>
+        <p class="proj-detail">Mezzanine floor combined with a facade cladding rail system, intermediate stair landing, and column-to-wall girt connection details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d1" data-cat="commercial" data-idx="9" tabindex="0" role="button" aria-label="View: Commercial Building BIM Model">
+      <img src="images/Snap-11.PNG" alt="Commercial building BIM model with electrical services coordination overlay" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Commercial // BIM</div>
+        <div class="proj-name">Commercial Building BIM Model</div>
+        <p class="proj-detail">Fully coordinated 3D BIM model with electrical services overlay — LOD 350, IFC-exported for open-BIM multi-disciplinary workflow.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d2" data-cat="commercial" data-idx="10" tabindex="0" role="button" aria-label="View: Single-Storey Retail Structure">
+      <img src="images/Snap-12.PNG" alt="Single-storey commercial retail structure with cantilever awning and roof purlins" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Commercial // Retail</div>
+        <div class="proj-name">Single-Storey Retail Structure</div>
+        <p class="proj-detail">Single-storey commercial portal frame with cantilever awning, sliding door structural framing, and full roof purlin and gutter bracket details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card wide reveal" data-cat="aquatic" data-idx="11" tabindex="0" role="button" aria-label="View: Aquatic and Leisure Centre">
+      <img src="images/Snap-13.PNG" alt="Aquatic and leisure centre with pool basins, mezzanine viewing platforms and multi-level stair towers" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Commercial // Aquatic</div>
+        <div class="proj-name">Aquatic &amp; Leisure Centre</div>
+        <p class="proj-detail">Complex mixed-use aquatic centre including pool basin steelwork, mezzanine viewing platforms, multi-level stair towers, and entry canopy framing.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d1" data-cat="aquatic" data-idx="12" tabindex="0" role="button" aria-label="View: Aquatic Centre Pool Level Detail">
+      <img src="images/Snap-14.PNG" alt="Aquatic centre pool level steelwork with access ladders, viewing platforms and entry ramp" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Commercial // Aquatic</div>
+        <div class="proj-name">Aquatic Centre — Pool Level</div>
+        <p class="proj-detail">Pool level steelwork with access ladders, viewing platforms, sloped entry ramp structure, and slab edge connection details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal reveal-d2" data-cat="infrastructure" data-idx="13" tabindex="0" role="button" aria-label="View: Underground Tank and Pit Structures">
+      <img src="images/Snap-15.PNG" alt="Underground concrete tank and pit structural assemblies with roof framing and access provisions" loading="lazy">
+      <div class="proj-card-overlay">
+        <div class="proj-cat">Infrastructure</div>
+        <div class="proj-name">Underground Tank &amp; Pit Structures</div>
+        <p class="proj-detail">Structural detailing for underground concrete tank and pit assemblies with roof framing grids, access provisions, and waterproofing ledge details.</p>
+        <div class="proj-view">Enlarge →</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band reveal" role="complementary">
+  <div class="cta-bg-text" aria-hidden="true">FTE</div>
+  <h2 class="cta-band-headline">Have a project<br><em>in mind?</em></h2>
+  <div class="cta-band-actions">
+    <a class="btn btn-primary magnetic" href="contact.html"><span>Let's Talk</span><svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a class="btn btn-ghost magnetic" href="services.html"><span>Our Services</span></a>
+  </div>
+</div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-brand-logo" src="images/fabri-tech-logo.jpeg" alt="Fabri-Tech Engineering">
+      <p class="footer-brand-desc">Precision structural steel detailing and engineering services. Delivered with accuracy, speed, and uncompromising quality for clients worldwide.</p>
+    </div>
+    <div>
+      <div class="footer-col-heading">Navigation</div>
+      <ul class="footer-nav" role="list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-heading">Project Types</div>
+      <ul class="footer-nav" role="list"><li><a href="projects.html">Industrial</a></li><li><a href="projects.html">Commercial</a></li><li><a href="projects.html">Infrastructure</a></li><li><a href="projects.html">Mezzanine</a></li><li><a href="projects.html">Aquatic</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-heading">Contact</div>
+      <div class="footer-contact-row"><svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="footer-contact-text"><a href="mailto:fabri.tech@aol.com">fabri.tech@aol.com</a></span></div>
+      <div class="footer-contact-row"><svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="footer-contact-text"><a href="tel:+14083007054">+1 408-300-7054</a></span></div>
+      <div class="footer-contact-row"><svg class="footer-contact-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="footer-contact-text">Mon–Fri, 8:00 PM EST – 2:00 PM PST</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Fabri-Tech Engineering. All rights reserved.</span>
+    <div class="footer-socials" aria-label="Social links">
+      <a class="footer-social" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a class="footer-social" href="mailto:fabri.tech@aol.com" aria-label="Email us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){var nav=document.getElementById('nav');function s(){nav.classList.toggle('is-scrolled',window.scrollY>60);}window.addEventListener('scroll',s,{passive:true});nav.classList.add('is-scrolled');}());
+(function(){var btn=document.getElementById('hamburger'),menu=document.getElementById('mobile-menu');function open(){btn.classList.add('is-open');btn.setAttribute('aria-expanded','true');btn.setAttribute('aria-label','Close menu');menu.classList.add('is-open');document.body.style.overflow='hidden';}function close(){btn.classList.remove('is-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open menu');menu.classList.remove('is-open');document.body.style.overflow='';}btn.addEventListener('click',function(){btn.classList.contains('is-open')?close():open();});menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&btn.classList.contains('is-open'))close();});}());
+(function(){if(!window.matchMedia('(pointer:fine)').matches)return;var dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');var mx=-400,my=-400,rx=-400,ry=-400;document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;});(function loop(){dot.style.left=mx+'px';dot.style.top=my+'px';rx+=(mx-rx)*0.11;ry+=(my-ry)*0.11;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();document.addEventListener('mouseover',function(e){if(e.target.closest('a,button,.proj-card,.filter-btn'))ring.classList.add('is-hovered');});document.addEventListener('mouseout',function(e){if(e.target.closest('a,button,.proj-card,.filter-btn'))ring.classList.remove('is-hovered');});document.addEventListener('mousedown',function(){ring.classList.add('is-clicking');});document.addEventListener('mouseup',function(){ring.classList.remove('is-clicking');});}());
+(function(){document.querySelectorAll('.magnetic').forEach(function(el){el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();el.style.transform='translate('+(e.clientX-r.left-r.width/2)*0.34+'px,'+(e.clientY-r.top-r.height/2)*0.34+'px)';el.style.transition='transform 0.1s linear';});el.addEventListener('mouseleave',function(){el.style.transform='translate(0,0)';el.style.transition='transform 0.65s cubic-bezier(0.34,1.56,0.64,1)';});});}());
+(function(){var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target);}});},{threshold:0.07});document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});}());
+(function(){var btns=document.querySelectorAll('.filter-btn');var cards=[...document.querySelectorAll('.proj-card')];btns.forEach(function(btn){btn.addEventListener('click',function(){btns.forEach(function(b){b.classList.remove('is-active');b.setAttribute('aria-pressed','false');});btn.classList.add('is-active');btn.setAttribute('aria-pressed','true');var f=btn.dataset.filter;cards.forEach(function(c){c.style.display=(f==='all'||c.dataset.cat===f)?'':'none';});});});}());
+(function(){var P=[{src:'images/Snap-2.PNG',title:'Large-Span Industrial Storage Facility',cat:'Industrial // Storage'},{src:'images/Snap-3.PNG',title:'Elevated Conveyor & Bridge Structure',cat:'Infrastructure'},{src:'images/Snap-4.PNG',title:'Multi-Level Commercial Frame',cat:'Commercial'},{src:'images/Snap-5.PNG',title:'Modular Building Assemblies',cat:'Commercial // Modular'},{src:'images/Snap-6.PNG',title:'Industrial Processing Plant Steelwork',cat:'Industrial // Processing'},{src:'images/Snap-7.PNG',title:'Portal Frame Industrial Shed',cat:'Industrial'},{src:'images/Snap-8.PNG',title:'Mezzanine & Stair Access Systems',cat:'Mezzanine // Access'},{src:'images/Snap-9.PNG',title:'Multi-Level Stair Core Structure',cat:'Mezzanine // Stair Core'},{src:'images/Snap-10.PNG',title:'Mezzanine Floor & Facade Framing',cat:'Mezzanine // Facade'},{src:'images/Snap-11.PNG',title:'Commercial Building BIM Model',cat:'Commercial // BIM'},{src:'images/Snap-12.PNG',title:'Single-Storey Retail Structure',cat:'Commercial // Retail'},{src:'images/Snap-13.PNG',title:'Aquatic & Leisure Centre',cat:'Commercial // Aquatic'},{src:'images/Snap-14.PNG',title:'Aquatic Centre — Pool Level Detail',cat:'Commercial // Aquatic'},{src:'images/Snap-15.PNG',title:'Underground Tank & Pit Structures',cat:'Infrastructure'}];var idx=0;var lb=document.getElementById('lightbox'),img=document.getElementById('lb-img'),tEl=document.getElementById('lb-title'),cEl=document.getElementById('lb-cat');function set(i){idx=((i%P.length)+P.length)%P.length;img.src=P[idx].src;img.alt=P[idx].title;tEl.textContent=P[idx].title;cEl.textContent=P[idx].cat;}function open(i){set(i);lb.classList.add('is-open');document.body.style.overflow='hidden';}function close(){lb.classList.remove('is-open');document.body.style.overflow='';}document.querySelectorAll('.proj-card').forEach(function(c){c.addEventListener('click',function(){open(parseInt(c.dataset.idx));});c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(parseInt(c.dataset.idx));}});});document.getElementById('lb-close').addEventListener('click',close);document.getElementById('lb-prev').addEventListener('click',function(){set(idx-1);});document.getElementById('lb-next').addEventListener('click',function(){set(idx+1);});lb.addEventListener('click',function(e){if(e.target===lb)close();});document.addEventListener('keydown',function(e){if(!lb.classList.contains('is-open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')set(idx-1);if(e.key==='ArrowRight')set(idx+1);});}());
+</script>
+</body>
+</html>
